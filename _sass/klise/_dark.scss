@@ -1,6 +1,6 @@
-body[data-theme="dark"] .navbar .menu .trigger .trigger-container .menu-link {
-    color: $dark-text-base-color;
-    background-color: $dark-black;
+body[data-theme="dark"] {
+  color: $dark-text-base-color;
+  background-color: $dark-black;
 
   // Heading
   h1,
