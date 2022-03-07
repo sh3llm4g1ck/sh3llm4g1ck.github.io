@@ -245,5 +245,6 @@ body[data-theme="dark"] {
     }
   }
 }
-
-
+body[data-theme="dark"] .bmc-btn-container > a.bmc-btn:hover {
+    color: black;
+}
