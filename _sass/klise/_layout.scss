@@ -15,6 +15,13 @@
    color: #000000;
 }
 
+.bmc-btn:hover, .bmc-btn:active, .bmc-btn:focus {
+    text-decoration: none !important;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
 // Navbar
 .navbar {
   height: auto;
