@@ -9,13 +9,13 @@ layout: compress
 
   <script>
     const body = document.body;
-    const data = body.getAttribute("data-theme");
+    const data = body.getAttribute("dtheme");
 
     const initTheme = (state) => {
       if (state === "dark") {
-        body.setAttribute("data-theme", "dark");
+        body.setAttribute("dtheme", "dark");
       } else if (state === "light") {
-        body.removeAttribute("data-theme");
+        body.removeAttribute("dtheme");
       } else {
         localStorage.setItem("theme", data);
       }
