@@ -1,9 +1,28 @@
 .bmac {
   margin-left: 350px;
-  margin-top: -30px;
+  margin-top: -40px;
   padding: 0;
   border: none;
   background: none;
+}
+
+.bmc-btn {
+    min-width: 210px;
+    color: #000000;
+    background-color: #FFDD00 !important;
+    height: 50px;
+    border-radius: 12px;
+    font-size: 28px;
+    font-weight: Normal;
+    border: none;
+    padding: 0px 24px;
+    line-height: 27px;
+    text-decoration: none !important;
+    display: inline-flex !important;
+    align-items: center;
+    font-family: 'Cookie', cursive !important;
+    -webkit-box-sizing: border-box !important;
+    box-sizing: border-box !important;
 }
 
 .bmc-btn-text {
