@@ -5,7 +5,7 @@ layout: page
 comments: false
 ---
 
-Welcome to my blog, my name is sh3llm4g1ck 
+My name is sh3llm4g1ck, interested in CTF about 7 years now. 
 
 Contact:
 
