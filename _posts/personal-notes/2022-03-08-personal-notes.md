@@ -34,3 +34,19 @@ Dynamic: A dynamic IP address always keep changing automatically.
 Port is where information is sent. Ports are software-based, each port is associated with a specific process or service.
 
 There are 65,535 ports, for example 22 -> SSH
+
+```json
+{
+  "firstName": "John",
+  "lastName": "Smith",
+  "age": 25
+}
+```
+
+```python
+print('hello world')
+```
+
+```
+print('hello world')
+```
