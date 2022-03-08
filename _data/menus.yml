@@ -13,6 +13,10 @@
 - title: about
   url: /about/
   external: false # set true if you using external link, see below
+ 
+- title: Cheat Sheets
+  url: /cheatsheets/
+  external: false # set true if you using external link, see below
   
 - title: CTF Sites
   url: https://ctfsites.github.io/
