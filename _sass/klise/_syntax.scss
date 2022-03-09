@@ -22,7 +22,7 @@ code {
 
 // Codeblock Theme
 pre.highlight, pre {
-  margin: 0 -27px;
+  margin: 1 -27px;
   @include media-query($on-mobile) {
     margin: 0 calc(51% - 51vw);
     padding-left: 20px;
@@ -55,7 +55,7 @@ pre.highlight, pre {
 
 .highlight,
 .highlight .w {
-  color: #fbf1c7;
+  color: #ffffff;
   // background-color: #1a1b21;
 }
 
