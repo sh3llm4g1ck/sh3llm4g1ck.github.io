@@ -20,3 +20,23 @@ bandit0@bandit.labs.overthewire.org's password:
 bandit0@bandit:~$ 
 ```
 
+We can simply find the password for the next level in the current working directory:
+
+```
+bandit0@bandit:~$ ls
+readme
+bandit0@bandit:~$ cat readme 
+boJ9jbbUNNfktd78OOpsqOltutMc3MY1
+```
+
+## level 1
+
+Now we can connect as bandit1, I'll show it just for this time then you can apply it for each level. Sadly we can't use `su (su - bandit1)` so we do have to use the SSH way again.
+
+```
+$ ssh bandit1@bandit.labs.overthewire.org -p 2220
+This is a OverTheWire game server. More information on http://www.overthewire.org/wargames
+bandit1@bandit.labs.overthewire.org's password: 
+
+bandit1@bandit:~$ 
+```
