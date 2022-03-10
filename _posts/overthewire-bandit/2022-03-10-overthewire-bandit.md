@@ -101,3 +101,55 @@ drwxr-xr-x 3 root    root    4096 May  7  2020 ..
 bandit3@bandit:~/inhere$ cat .hidden 
 pIwrPrtPN36QITSp3EQaw936yaFoFgAB
 ```
+
+## level 4
+
+There is another `inhere` directory, we enter into it and we see lot of dashed files again.
+
+```
+bandit4@bandit:~$ cd inhere/
+bandit4@bandit:~/inhere$ ls -la
+total 48
+drwxr-xr-x 2 root    root    4096 May  7  2020 .
+drwxr-xr-x 3 root    root    4096 May  7  2020 ..
+-rw-r----- 1 bandit5 bandit4   33 May  7  2020 -file00
+-rw-r----- 1 bandit5 bandit4   33 May  7  2020 -file01
+-rw-r----- 1 bandit5 bandit4   33 May  7  2020 -file02
+-rw-r----- 1 bandit5 bandit4   33 May  7  2020 -file03
+-rw-r----- 1 bandit5 bandit4   33 May  7  2020 -file04
+-rw-r----- 1 bandit5 bandit4   33 May  7  2020 -file05
+-rw-r----- 1 bandit5 bandit4   33 May  7  2020 -file06
+-rw-r----- 1 bandit5 bandit4   33 May  7  2020 -file07
+-rw-r----- 1 bandit5 bandit4   33 May  7  2020 -file08
+-rw-r----- 1 bandit5 bandit4   33 May  7  2020 -file09
+```
+
+If we try to read one of them we can see that contains unreadable characters.
+
+```
+bandit4@bandit:~/inhere$ cat < -file00
+�/`2ғ�%��rL~5�g��� �����
+```
+
+Now we will use the command `file` with wildcard `*` power that matches any character to check which file contains readable data. Because there are dashed files we have to use a little trick `./`:
+
+```
+bandit4@bandit:~/inhere$ file ./*
+./-file00: data
+./-file01: data
+./-file02: data
+./-file03: data
+./-file04: data
+./-file05: data
+./-file06: data
+./-file07: ASCII text
+./-file08: data
+./-file09: data
+```
+
+Bingo! File `-file07` has the password.
+
+```
+bandit4@bandit:~/inhere$ cat < -file07
+koReBOKuIDDepwhWk7jZC0RTdopnAYKh
+```
