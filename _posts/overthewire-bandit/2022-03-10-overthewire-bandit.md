@@ -131,7 +131,7 @@ bandit4@bandit:~/inhere$ cat < -file00
 �/`2ғ�%��rL~5�g��� �����
 ```
 
-Now we will use the command `file` with wildcard `*` power that matches any character to check which file contains readable data. Because there are dashed files we have to use a little trick `./`:
+Now we will use the command `file` with wildcard `*` power that matches any character to check which file contains readable data. Because these are dashed files we have to use a little trick `./`:
 
 ```
 bandit4@bandit:~/inhere$ file ./*
@@ -153,3 +153,7 @@ Bingo! File `-file07` has the password.
 bandit4@bandit:~/inhere$ cat < -file07
 koReBOKuIDDepwhWk7jZC0RTdopnAYKh
 ```
+
+## level 5
+
+Coming soon..
