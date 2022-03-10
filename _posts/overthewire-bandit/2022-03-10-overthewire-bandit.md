@@ -72,7 +72,7 @@ bandit2@bandit:~$ cat spaces\ in\ this\ filename
 UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
 ```
 
-Other way that will also work using single/double quotes:
+Other way that will also work is using single/double quotes:
 
 ```
 bandit2@bandit:~$ cat "spaces in this filename"
@@ -80,3 +80,24 @@ UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
 ```
 
 ## level 3
+
+This level is a really simple one, running `ls` we can see a directory named `inhere`.
+
+```
+bandit3@bandit:~$ ls
+inhere
+bandit3@bandit:~$ cd inhere/
+bandit3@bandit:~/inhere$ 
+```
+
+There is a hidden file (.) here which we can see it using `ls -la`.
+
+```
+bandit3@bandit:~/inhere$ ls -la
+total 12
+drwxr-xr-x 2 root    root    4096 May  7  2020 .
+drwxr-xr-x 3 root    root    4096 May  7  2020 ..
+-rw-r----- 1 bandit4 bandit3   33 May  7  2020 .hidden
+bandit3@bandit:~/inhere$ cat .hidden 
+pIwrPrtPN36QITSp3EQaw936yaFoFgAB
+```
