@@ -40,3 +40,18 @@ bandit1@bandit.labs.overthewire.org's password:
 
 bandit1@bandit:~$ 
 ```
+
+Running `ls`, we see a dash file that we can't read it if we try. Traditionally `-` means stdin (standard input) accepts text as input. If we try to read it using cat will wait for our input.
+
+```
+bandit1@bandit:~$ ls 
+-
+bandit1@bandit:~$ cat -
+```
+
+After a quick google-fu we can read it using the left-angle bracket `<` which redirect a file into a command.
+
+```
+bandit1@bandit:~$ cat < -
+CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
+```
