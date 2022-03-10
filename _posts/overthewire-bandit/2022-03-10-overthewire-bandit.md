@@ -55,3 +55,28 @@ After a quick google-fu we can read it using the left-angle bracket `<` which re
 bandit1@bandit:~$ cat < -
 CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
 ```
+
+## level 2
+
+Now we can see a file with spaces if we run `ls`.
+
+```
+bandit2@bandit:~$ ls
+spaces in this filename
+```
+
+We can read this file using different ways, the most simple one is by pressing TAB for auto completion.
+
+```
+bandit2@bandit:~$ cat spaces\ in\ this\ filename 
+UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
+```
+
+Other way that will also work using single/double quotes:
+
+```
+bandit2@bandit:~$ cat "spaces in this filename"
+UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
+```
+
+## level 3
