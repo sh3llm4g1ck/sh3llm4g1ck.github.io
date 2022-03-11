@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "OverTheWire: Bandit writeup"
-tags: [overthewire, linux, ssh]
+tags: [overthewire, linux, ssh, find]
 ---
 
 Our journey will begin with [Bandit](https://overthewire.org/wargames/bandit/){:target="_blank"} wargame, as the page says will teaches us the basics we need to be able to play other wargames. We will learn various linux commands and much more. This post will contain all the solutions for each level with explanation. I'll update daily, till all the levels get pwned. Let's get started!
@@ -131,7 +131,7 @@ bandit4@bandit:~/inhere$ cat < -file00
 �/`2ғ�%��rL~5�g��� �����
 ```
 
-Now we will use the command `file` with wildcard `*` power that matches any character to check which file contains readable data. Because these are dashed files we have to use a little trick `./`:
+Now we will use the command `file` with wildcard `*` that matches any character to check which file contains readable data. Because these are dashed files we have to use a little trick `./`:
 
 ```
 bandit4@bandit:~/inhere$ file ./*
@@ -155,5 +155,27 @@ koReBOKuIDDepwhWk7jZC0RTdopnAYKh
 ```
 
 ## level 5
+
+We have another `inhere` directory that contains a lot of directories and files. OTW gives us a hint that file is:
+
+```
+human-readable
+1033 bytes in size
+not executable
+```
+
+I crafted the following `find` command and gave me the password.
+
+```
+bandit5@bandit:~/inhere$ find . -type f -size 1033c -exec cat {} \;
+DXjZPULLxYr17uwoI01bNLQbtFemEgo7
+```
+
+`.` = Search in current directory.
+`-type f` = Search for regular file.
+`-size 1033c` = Search for 1033bytes.
+`-exec cat {} \;` = Execute cat once you find the file.
+
+## level 6
 
 Coming soon..
