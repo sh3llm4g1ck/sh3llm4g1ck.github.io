@@ -172,8 +172,11 @@ DXjZPULLxYr17uwoI01bNLQbtFemEgo7
 ```
 
 `.` = Search in current directory.
+
 `-type f` = Search for regular file.
+
 `-size 1033c` = Search for 1033bytes.
+
 `-exec cat {} \;` = Execute cat once you find the file.
 
 ## level 6
