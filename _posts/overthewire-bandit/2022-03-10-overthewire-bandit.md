@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "OverTheWire: Bandit writeup"
-tags: [overthewire, linux, ssh, find]
+tags: [overthewire, linux, ssh, find, grep]
 ---
 
 Our journey will begin with [Bandit](https://overthewire.org/wargames/bandit/){:target="_blank"} wargame, as the page says will teaches us the basics we need to be able to play other wargames. We will learn various linux commands and much more. This post will contain all the solutions for each level with explanation. I'll update daily, till all the levels get pwned. Let's get started!
@@ -171,13 +171,12 @@ bandit5@bandit:~/inhere$ find . -type f -size 1033c -exec cat {} \;
 DXjZPULLxYr17uwoI01bNLQbtFemEgo7
 ```
 
-`.` = Search in current directory.
-
-`-type f` = Search for regular file.
-
-`-size 1033c` = Search for 1033bytes.
-
-`-exec cat {} \;` = Execute cat once you find the file.
+```
+. = Search in current directory.
+-type f = Search for regular file.
+-size 1033c = Search for 1033bytes.
+-exec cat {} \; = Execute cat once you find the file.
+```
 
 ## level 6
 
