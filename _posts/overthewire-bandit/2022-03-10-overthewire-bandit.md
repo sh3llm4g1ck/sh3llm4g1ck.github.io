@@ -178,6 +178,36 @@ DXjZPULLxYr17uwoI01bNLQbtFemEgo7
 `-size 1033c` = Search for 1033bytes.
 
 `-exec cat {} \;` = Execute cat once you find the file.
+
 ## level 6
 
-Coming soon..
+Now OTW tells us that file is:
+
+```
+owned by user bandit7
+owned by group bandit6
+33 bytes in size
+```
+
+So I crafted the following command.
+
+```
+bandit6@bandit:~$ find / -user bandit7 -group bandit6 -size 33c -exec cat {} \; 2>/dev/null
+HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
+```
+
+## level 7
+
+In this level we have a file called `data.txt` that contains lot of data, 98k lines.
+
+```
+bandit7@bandit:~$ wc -l data.txt 
+98567 data.txt
+```
+
+OTW tells us that password is next to word millionth, so we can simply use `grep`.
+
+```
+bandit7@bandit:~$ cat data.txt | grep -iw "millionth"
+millionth	cvX2JJa4CFALtqS87jk27qwqGhBM9plV
+```
