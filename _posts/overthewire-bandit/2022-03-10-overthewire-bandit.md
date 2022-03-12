@@ -178,7 +178,6 @@ DXjZPULLxYr17uwoI01bNLQbtFemEgo7
 `-size 1033c` = Search for 1033bytes.
 
 `-exec cat {} \;` = Execute cat once you find the file.
-
 ## level 6
 
 Coming soon..
