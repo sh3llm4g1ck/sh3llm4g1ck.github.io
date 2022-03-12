@@ -210,3 +210,33 @@ OTW tells us that password is next to word millionth, so we can simply use `grep
 bandit7@bandit:~$ cat data.txt | grep -iw "millionth"
 millionth	cvX2JJa4CFALtqS87jk27qwqGhBM9plV
 ```
+
+## level 8
+
+We get another `data.txt` file with 1k lines.
+
+```
+bandit8@bandit:~$ wc -l data.txt 
+1001 data.txt
+```
+
+OTW says that password is the only line of text that occurs only once. I tried and tried but nothing, then I did some research and found this post [here](https://unix.stackexchange.com/questions/188473/searching-for-terms-that-occur-exactly-once-in-a-set-of-files){:target="_blank"} and bingo got it!
+
+```
+bandit8@bandit:~$ cat data.txt | sort | uniq -u
+UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
+```
+
+Let's explain now what happened.
+
+```
+sort = The Sort command allows us to sort lines in a file.
+We sort the file in alphabetical order first. 
+```
+
+```
+uniq = The uniq command allows us to isolate unique strings in a file.
+We used the -u option to print the unique lines.
+```
+
+# level 9
