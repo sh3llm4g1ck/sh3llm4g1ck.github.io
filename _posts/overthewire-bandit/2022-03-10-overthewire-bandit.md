@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "OverTheWire: Bandit writeup"
-tags: [overthewire, linux, ssh, find, grep]
+tags: [overthewire, linux, ssh, find, grep, sort, uniq]
 ---
 
 Our journey will begin with [Bandit](https://overthewire.org/wargames/bandit/){:target="_blank"} wargame, as the page says will teaches us the basics we need to be able to play other wargames. We will learn various linux commands and much more. This post will contain all the solutions for each level with explanation. I'll update daily, till all the levels get pwned. Let's get started!
@@ -239,4 +239,24 @@ uniq = The uniq command allows us to isolate unique strings in a file.
 We used the -u option to print the unique lines.
 ```
 
-# level 9
+## level 9
+
+Again another `data.txt`, if we try to read the file we get unreadable characters.
+
+```
+bandit9@bandit:~$ cat data.txt | head -2
+�L�lω;��ßOܛ��ǤX��NdT$��x7��@D@�o��+D��B��M֢�Z/,_��w��#�5���
+                                                          Ў�e�&�-��Ϣ�6Q8��J�%fa�
+�np�6l
+```
+
+We can use the `strings` commands which prints human-readable characters. OTW also tells us that the password is next to `=`, so we can craft the following command get the password.
+
+```
+bandit9@bandit:~$ strings data.txt | grep "="
+[DATA]
+&========== truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
+S=A.H&^
+```
+
+## level 10
