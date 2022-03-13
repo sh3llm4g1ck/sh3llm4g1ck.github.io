@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "OverTheWire: Bandit writeup"
-tags: [overthewire, linux, ssh, find, grep, sort, uniq, strings]
+tags: [overthewire, linux, ssh, find, grep, sort, uniq, strings, base64]
 ---
 
 Our journey will begin with [Bandit](https://overthewire.org/wargames/bandit/){:target="_blank"} wargame, as the page says will teaches us the basics we need to be able to play other wargames. We will learn various linux commands and much more. This post will contain all the solutions for each level with explanation. I'll update daily, till all the levels get pwned. Let's get started!
@@ -261,11 +261,25 @@ S=A.H&^
 
 ## level 10
 
-`.data.txt` now has base64 encoded data.
+`data.txt` now has base64 encoded data.
 
 ```
 bandit10@bandit:~$ cat data.txt 
 VGhlIHBhc3N3b3JkIGlzIElGdWt3S0dzRlc4TU9xM0lSRnFyeEUxaHhUTkViVVBSCg==
 ```
 
-Base64 is a binary to text encoding scheme, converting binary data to ASCII text. it's more easily transmitted in things like e-mail and HTML form data.
+Base64 is a binary to text encoding scheme, converting binary data to ASCII text.
+
+encode =  Is the process of putting a sequence of characters in a special format for transfer or storage. 
+decode =  Convert encoded data back into the original form.
+
+We can simply decode here.
+
+```
+bandit10@bandit:~$ cat data.txt | base64 -d
+The password is IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
+```
+
+## level 11
+
+Coming soon..
