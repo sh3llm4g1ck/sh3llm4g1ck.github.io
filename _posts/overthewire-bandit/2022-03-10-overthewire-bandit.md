@@ -261,4 +261,11 @@ S=A.H&^
 
 ## level 10
 
-Coming soon..
+`.data.txt` now has base64 encoded data.
+
+```
+bandit10@bandit:~$ cat data.txt 
+VGhlIHBhc3N3b3JkIGlzIElGdWt3S0dzRlc4TU9xM0lSRnFyeEUxaHhUTkViVVBSCg==
+```
+
+Base64 is a binary to text encoding scheme, converting binary data to ASCII text. it's more easily transmitted in things like e-mail and HTML form data.
