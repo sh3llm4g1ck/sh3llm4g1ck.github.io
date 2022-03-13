@@ -235,7 +235,7 @@ We sort the file in alphabetical order first.
 ```
 
 ```
-uniq = The uniq command allows us to isolate unique strings in a file.
+uniq = The uniq command allows us to remove all the repeated lines.
 We used the -u option to print the unique lines.
 ```
 
