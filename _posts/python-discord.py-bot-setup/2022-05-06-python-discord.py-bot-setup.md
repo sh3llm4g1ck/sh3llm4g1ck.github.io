@@ -31,7 +31,15 @@ You can't do shit without a guild/server. I bet the majority already know how to
 
 ![](https://raw.githubusercontent.com/sh3llm4g1ck/sh3llm4g1ck.github.io/main/_posts/python-discord.py-bot-setup/images/4.png)
 
-5) Avada Kedavra you have a server.
+5) Abracadabra you have a server.
 
 ![](https://raw.githubusercontent.com/sh3llm4g1ck/sh3llm4g1ck.github.io/main/_posts/python-discord.py-bot-setup/images/5.png)
 
+# Create a Bot Account
+
+In order to work with discord API we need to have a bot account, first go to discord.com and log in then move to [Developer Portal/Applications](https://discord.com/developers/applications){:target="_blank"}
+
+1) First let's create a new application.
+
+![](https://raw.githubusercontent.com/sh3llm4g1ck/sh3llm4g1ck.github.io/main/_posts/python-discord.py-bot-setup/images/6.png)
+![](https://raw.githubusercontent.com/sh3llm4g1ck/sh3llm4g1ck.github.io/main/_posts/python-discord.py-bot-setup/images/7.png)
