@@ -42,4 +42,5 @@ In order to work with discord API we need to have a bot account, first go to dis
 1) First let's create a new application.
 
 ![](https://raw.githubusercontent.com/sh3llm4g1ck/sh3llm4g1ck.github.io/main/_posts/python-discord.py-bot-setup/images/6.png)
+
 ![](https://raw.githubusercontent.com/sh3llm4g1ck/sh3llm4g1ck.github.io/main/_posts/python-discord.py-bot-setup/images/7.png)
