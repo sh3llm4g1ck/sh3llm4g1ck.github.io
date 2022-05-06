@@ -18,6 +18,8 @@ You can't do shit without a guild/server. I bet the majority already know how to
 Click on the plus symbol.
 ![](https://raw.githubusercontent.com/sh3llm4g1ck/sh3llm4g1ck.github.io/main/_posts/python-discord.py-bot-setup/images/1.png)
 
+adssa 
+
 test
 ![](https://raw.githubusercontent.com/sh3llm4g1ck/sh3llm4g1ck.github.io/main/_posts/python-discord.py-bot-setup/images/2.png)
 
