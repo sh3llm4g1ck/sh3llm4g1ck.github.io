@@ -17,7 +17,7 @@ You can't do shit without a guild/server. I bet the majority already know how to
 
 ![](https://raw.githubusercontent.com/sh3llm4g1ck/sh3llm4g1ck.github.io/main/_posts/python-discord.py-bot-setup/images/1.png)
 
-2) Click on "Create My Own".
+2) Click on `Create My Own`.
 
 ![](https://raw.githubusercontent.com/sh3llm4g1ck/sh3llm4g1ck.github.io/main/_posts/python-discord.py-bot-setup/images/2.png)
 
@@ -72,3 +72,52 @@ We have a server, we have a bot account now we need to invite the bot to the ser
 ![](https://raw.githubusercontent.com/sh3llm4g1ck/sh3llm4g1ck.github.io/main/_posts/python-discord.py-bot-setup/images/13.png)
 
 ![](https://raw.githubusercontent.com/sh3llm4g1ck/sh3llm4g1ck.github.io/main/_posts/python-discord.py-bot-setup/images/14.png)
+
+# Coding the bot
+
+Τhis is where the magic begins, first we have to install the [discord.py](https://github.com/Rapptz/discord.py){:target="_blank"} library. We're going to use pip, pip is the standard package manager for python it allows us to install/uninstall etc python modules.
+
+Let's install pip first. Fire up your terminal and run:
+
+```
+$ sudo apt install python3-pip -y
+```
+
+```
+$ pip3 -V
+pip 20.3.4 from /usr/lib/python3/dist-packages/pip (python 3.9)
+```
+
+Now we can install discord.py:
+
+```
+$ pip3 -q install discord.py
+$ pip3 freeze | grep discord.py
+discord.py==1.7.3
+```
+
+Good, good. Let's create a space now to work:
+
+```
+$ cd Documents/
+$ mkdir 1337bot; cd 1337bot
+$ touch main.py
+```
+
+Before we start coding the bot we need to take our bot Token. Token is a string that contains letters,numbers,symbols that connects our code to the application. Always remember **never share your token with someone else!** Imagine if a kiddo connects his code to your application and do malicious things like banning all members, delete all channels.. got it? 
+
+Now go again to your [applications](https://discord.com/developers/applications){:target="_blank"} and go under Bot setting and click `Reset Token` and copy it.
+
+![](https://raw.githubusercontent.com/sh3llm4g1ck/sh3llm4g1ck.github.io/main/_posts/python-discord.py-bot-setup/images/15.png)
+
+
+
+You can use now your favorite text editor sublime,atom,vsc etc. I prefer command line text editors, I'll use `nano`.
+
+```python
+
+```
+
+
+
+
