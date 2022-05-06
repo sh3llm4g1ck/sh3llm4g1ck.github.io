@@ -16,20 +16,22 @@ Let's start, you will need: discord(software/browser), browser, terminal, brain.
 You can't do shit without a guild/server. I bet the majority already know how to make one but I'll show it for those who don't know.
 
 Click on the plus symbol.
+
 ![](https://raw.githubusercontent.com/sh3llm4g1ck/sh3llm4g1ck.github.io/main/_posts/python-discord.py-bot-setup/images/1.png)
 
-adssa 
+Click on "Create My Own".
 
-test
 ![](https://raw.githubusercontent.com/sh3llm4g1ck/sh3llm4g1ck.github.io/main/_posts/python-discord.py-bot-setup/images/2.png)
 
-
 Now you can choose "For me and my friends" "For a club or community" or just skip, does not matter.
+
 ![](https://raw.githubusercontent.com/sh3llm4g1ck/sh3llm4g1ck.github.io/main/_posts/python-discord.py-bot-setup/images/3.png)
 
-Choose your server name and press Create.
+Choose your server name and press "Create".
+
 ![](https://raw.githubusercontent.com/sh3llm4g1ck/sh3llm4g1ck.github.io/main/_posts/python-discord.py-bot-setup/images/4.png)
 
 Avada Kedavra you have a server.
+
 ![](https://raw.githubusercontent.com/sh3llm4g1ck/sh3llm4g1ck.github.io/main/_posts/python-discord.py-bot-setup/images/5.png)
 
