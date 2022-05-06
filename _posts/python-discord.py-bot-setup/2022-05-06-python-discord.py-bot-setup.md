@@ -9,8 +9,6 @@ Welcome, welcome. There are ton of tutorials on how to make a discord bot with p
 The tutorials will be based on GNU\Linux, if you're a windows user then bad for you. Use your search engine to find a way to do the corresponding things.
 I don't know how many tutorials I'll make until we cover everything, I'll see. At the end of the tutorials you will be an 1337 bot developer, I guess.
 
-Let's start, you will need: discord(software/browser), browser, terminal, brain. 
-
 # Make a Guild/Server
 
 You can't do shit without a guild/server. I bet the majority already know how to make one but I'll show it for those who don't know.
@@ -53,7 +51,7 @@ Click on "Yes, do it!"
 
 ![](https://raw.githubusercontent.com/sh3llm4g1ck/sh3llm4g1ck.github.io/main/_posts/python-discord.py-bot-setup/images/9.png)
 
-You have a bot account now. From this page you can change things like your bot name/profile etc.
+You have a bot account now. From this page you can change things like your bot username/profile etc.
 
 ![](https://raw.githubusercontent.com/sh3llm4g1ck/sh3llm4g1ck.github.io/main/_posts/python-discord.py-bot-setup/images/10.png)
 
