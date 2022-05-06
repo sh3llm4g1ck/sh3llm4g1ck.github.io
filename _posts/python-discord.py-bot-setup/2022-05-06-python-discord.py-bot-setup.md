@@ -19,8 +19,7 @@ Click on the plus symbol.
 ![](https://raw.githubusercontent.com/sh3llm4g1ck/sh3llm4g1ck.github.io/main/_posts/python-discord.py-bot-setup/images/1.png)
 
 
-Click on Create My Own. 
-![](https://raw.githubusercontent.com/sh3llm4g1ck/sh3llm4g1ck.github.io/main/_posts/python-discord.py-bot-setup/images/2.png)
+![Click on Create My Own.](https://raw.githubusercontent.com/sh3llm4g1ck/sh3llm4g1ck.github.io/main/_posts/python-discord.py-bot-setup/images/2.png)
 
 
 Now you can choose "For me and my friends" "For a club or community" or just skip, does not matter.
