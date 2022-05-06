@@ -10,8 +10,8 @@
   url: /tags/
   external: false # set true if you using external link, see below
 
-- title: /whoami
-  url: /whoami/
+- title: /#test
+  url: /test/
   external: false # set true if you using external link, see below
  
 # Example:
