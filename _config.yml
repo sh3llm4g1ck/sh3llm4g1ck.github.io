@@ -13,11 +13,10 @@ mode: dark # default theme "dark" | "light"
 author:
   name: sh3llm4g1ck # author name
   bio: | # tell to the world
-    GNU/Linux 중독 - ex CTF player - 1337년 뼛속까지
-    test
+    GNU/Linux 중독 - ex CTF player - 1337년 뼛속까지 - pwn 모든 것
   username: sh3llm4g1ck # general username
   github: sh3llm4g1ck # github username
-  email: your-email@email.com # email adress
+  email: 0@0.com # email adress
   avatar: /assets/img/0.png # change with your own avatar
 
 # URL settings
