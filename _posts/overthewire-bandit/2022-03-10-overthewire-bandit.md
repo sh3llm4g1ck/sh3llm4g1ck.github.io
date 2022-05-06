@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posta
 title: "OverTheWire: Bandit writeup"
 tags: [overthewire, linux, ssh, find, grep, sort, uniq, strings, base64]
 ---
