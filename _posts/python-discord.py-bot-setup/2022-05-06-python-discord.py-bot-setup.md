@@ -16,5 +16,5 @@ Let's start, you will need: discord(software/browser), browser, terminal, brain.
 You can't do shit without a guild/server. I bet the majority already know how to make one but I'll show it for those who don't know.
 
 test
-![](/images/1.png)
+![](images/1.png)
 
