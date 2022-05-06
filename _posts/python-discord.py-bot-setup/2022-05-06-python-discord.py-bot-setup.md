@@ -53,6 +53,24 @@ Click on "Yes, do it!"
 
 ![](https://raw.githubusercontent.com/sh3llm4g1ck/sh3llm4g1ck.github.io/main/_posts/python-discord.py-bot-setup/images/9.png)
 
-You have a bot user now.
+You have a bot account now. From this page you can change things like your bot name/profile etc.
 
 ![](https://raw.githubusercontent.com/sh3llm4g1ck/sh3llm4g1ck.github.io/main/_posts/python-discord.py-bot-setup/images/10.png)
+
+# Invite Bot to the server
+
+We have a server, we have a bot account now we need to invite the bot to the server.
+
+1) Under settings click on "OAuth2" then "URL Generator" and check the "bot" scope.
+
+![](https://raw.githubusercontent.com/sh3llm4g1ck/sh3llm4g1ck.github.io/main/_posts/python-discord.py-bot-setup/images/11.png)
+
+2) Now you can choose what permissions your bot want to have, personally I always choose Administrator to have them all but be careful. The generated URL allows us to invite the bot into the server.
+
+![](https://raw.githubusercontent.com/sh3llm4g1ck/sh3llm4g1ck.github.io/main/_posts/python-discord.py-bot-setup/images/12.png)
+
+3) Copy the generated URL and paste into your browser, choose in which server you want to add the bot and press continue. Now the bot is in the server.
+
+![](https://raw.githubusercontent.com/sh3llm4g1ck/sh3llm4g1ck.github.io/main/_posts/python-discord.py-bot-setup/images/13.png)
+
+![](https://raw.githubusercontent.com/sh3llm4g1ck/sh3llm4g1ck.github.io/main/_posts/python-discord.py-bot-setup/images/14.png)
