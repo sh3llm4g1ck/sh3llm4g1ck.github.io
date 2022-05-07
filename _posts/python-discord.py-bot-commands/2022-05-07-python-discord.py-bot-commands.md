@@ -31,11 +31,13 @@ async def cmd(ctx):
     await ctx.send(f"Hello {ctx.author.name} \O")
 ```
 
+# Command arguments
+
 ![](https://raw.githubusercontent.com/sh3llm4g1ck/sh3llm4g1ck.github.io/main/_posts/python-discord.py-bot-commands/images/2.png)
 
 Υou may feel confused now, what is `{ctx.author.name}`!? I'll share the logic with you how to read the documentation.
 
-`ctx` is the parameter always have to be first then is the attribute `author`. If we click on `author` tell us that is a `Member` and member has other attributes like the `name`. Check the screenshot below.
+`ctx` is the parameter always have to be first then is the attribute `author`. If we click on `author` tell us that is a `Member` and member has other attributes like the `name`. Check the screenshots below.
 
 ![](https://raw.githubusercontent.com/sh3llm4g1ck/sh3llm4g1ck.github.io/main/_posts/python-discord.py-bot-commands/images/3.png)
 
