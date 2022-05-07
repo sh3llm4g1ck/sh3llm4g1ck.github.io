@@ -111,6 +111,7 @@ Now go again to your [applications](https://discord.com/developers/applications)
 ![](https://raw.githubusercontent.com/sh3llm4g1ck/sh3llm4g1ck.github.io/main/_posts/python-discord.py-bot-setup/images/15.png)
 
 You can use now your favorite text editor sublime,atom,vsc etc. I prefer command line text editors, I'll use `nano`.
+
 Below is the simplest code for our bot to start running. I wrote comments to understand what each line does.
 
 ```python
