@@ -11,13 +11,12 @@ In this tutorial I'll cover like everything about commands, basic format, user-s
 
 Its really easy to create a command. The below code create a command called `cmd` when we execute it prints `This is my first command!`, add this to your code - save it - run the file.
 
-If you remember from the previous tutorial we set the `command_prefix` to `!` so now we will execute the command like this: `!cmd`
-
 ```python
 @client.command()
 async def cmd(ctx):
     await ctx.send("This is my first command!")
 ```
+If you remember from the previous tutorial we set the `command_prefix` to `!` so now we will execute the command like this: `!cmd`
 
 ![](https://raw.githubusercontent.com/sh3llm4g1ck/sh3llm4g1ck.github.io/main/_posts/python-discord.py-bot-commands/images/1.png)
 
@@ -31,8 +30,6 @@ async def cmd(ctx):
     await ctx.send(f"Hello {ctx.author.name} \O")
 ```
 
-# Command arguments
-
 ![](https://raw.githubusercontent.com/sh3llm4g1ck/sh3llm4g1ck.github.io/main/_posts/python-discord.py-bot-commands/images/2.png)
 
 Υou may feel confused now, what is `{ctx.author.name}`!? I'll share the logic with you how to read the documentation.
@@ -42,3 +39,5 @@ async def cmd(ctx):
 ![](https://raw.githubusercontent.com/sh3llm4g1ck/sh3llm4g1ck.github.io/main/_posts/python-discord.py-bot-commands/images/3.png)
 
 ![](https://raw.githubusercontent.com/sh3llm4g1ck/sh3llm4g1ck.github.io/main/_posts/python-discord.py-bot-commands/images/4.png)
+
+# Command arguments
