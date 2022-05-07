@@ -21,11 +21,11 @@ You can't do shit without a guild/server. I bet the majority already know how to
 
 ![](https://raw.githubusercontent.com/sh3llm4g1ck/sh3llm4g1ck.github.io/main/_posts/python-discord.py-bot-setup/images/2.png)
 
-3) Now you can choose "For me and my friends" "For a club or community" or just skip, does not matter.
+3) Now you can choose `For me and my friends` `For a club or community` or just `skip`, does not matter.
 
 ![](https://raw.githubusercontent.com/sh3llm4g1ck/sh3llm4g1ck.github.io/main/_posts/python-discord.py-bot-setup/images/3.png)
 
-4) Choose your server name and press "Create".
+4) Choose your server name and press `Create`.
 
 ![](https://raw.githubusercontent.com/sh3llm4g1ck/sh3llm4g1ck.github.io/main/_posts/python-discord.py-bot-setup/images/4.png)
 
@@ -43,11 +43,11 @@ In order to work with discord API we need to have a bot account, first go to dis
 
 ![](https://raw.githubusercontent.com/sh3llm4g1ck/sh3llm4g1ck.github.io/main/_posts/python-discord.py-bot-setup/images/7.png)
 
-2) Now let's create a bot user. Under settings click on "Bot" then "Add Bot"
+2) Now let's create a bot user. Under settings click on `Bot` then `Add Bot`.
 
 ![](https://raw.githubusercontent.com/sh3llm4g1ck/sh3llm4g1ck.github.io/main/_posts/python-discord.py-bot-setup/images/8.png)
 
-Click on "Yes, do it!"
+Click on `Yes, do it!`
 
 ![](https://raw.githubusercontent.com/sh3llm4g1ck/sh3llm4g1ck.github.io/main/_posts/python-discord.py-bot-setup/images/9.png)
 
@@ -59,7 +59,7 @@ You have a bot account now. From this page you can change things like your bot u
 
 We have a server, we have a bot account now we need to invite the bot to the server.
 
-1) Under settings click on "OAuth2" then "URL Generator" and check the "bot" scope.
+1) Under settings click on `OAuth2` then `URL Generator` and check the `bot` scope.
 
 ![](https://raw.githubusercontent.com/sh3llm4g1ck/sh3llm4g1ck.github.io/main/_posts/python-discord.py-bot-setup/images/11.png)
 
@@ -114,6 +114,11 @@ You can use now your favorite text editor sublime,atom,vsc etc. I prefer command
 
 Below is the simplest code for our bot to start running. I wrote comments to understand what each line does.
 
+```
+$ nano main.py
+...
+```
+
 ```python
 import discord
 from discord.ext import commands
@@ -150,4 +155,3 @@ Bookmark the [discord.py Documentation](https://discordpy.readthedocs.io/en/late
 If you need any help you can contact me on discord `sh3llm4g1ck#0853`.
 
 See you in the next tutorial.
-
