@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Python discord.py Bot - Setup"
-tags: [python, discord.py, linux]
+tags: [python, discord.py, linux, pip, nano]
 ---
 
 Welcome, welcome. There are ton of tutorials on how to make a discord bot with python but most of them are fucked up, missing things, outdated, forget to explain things, they make you to join their server to get the code etc you got the point. So I decided to make some 1337 tutorials on how to make one with full explanation that will cover everything and share the logic of how to search and do things. 
@@ -110,14 +110,43 @@ Now go again to your [applications](https://discord.com/developers/applications)
 
 ![](https://raw.githubusercontent.com/sh3llm4g1ck/sh3llm4g1ck.github.io/main/_posts/python-discord.py-bot-setup/images/15.png)
 
-
-
 You can use now your favorite text editor sublime,atom,vsc etc. I prefer command line text editors, I'll use `nano`.
+Below is the simplest code for our bot to start running. I wrote comments to understand what each line does.
 
 ```python
+import discord
+from discord.ext import commands
 
+#Here we set the command prefix. We set it to '!' so we will execute a command this way '!testcommand'
+client = commands.Bot(command_prefix = '!')
+
+#Here we set an event. An event is when you want your bot to do something when a event happens like when a member join/leave the server etc 
+#Then we use the on_ready() function, this function called after user login successfully 
+#Then we use the .user and .guilds attributes. The .user prints the connected user (our bot) and the .guilds prints the servers that the bot is member of
+@client.event
+async def on_ready():
+        print(f"{client.user} is online!")
+        print(f"Bot is connected to the following servers: {client.guilds}")
+
+#Here we specify our token
+client.run('PLACE_YOUR_TOKEN_HERE')
 ```
 
+Now save it and run it.
 
+```
+$ python3 main.py 
+1337 bot#4314 is online!
+Bot is connected to the following servers: [<Guild id=972128183732297798 name='1337@server' shard_id=None chunked=False member_count=2>]
+```
 
+We can now see that bot is online!
+
+![](https://raw.githubusercontent.com/sh3llm4g1ck/sh3llm4g1ck.github.io/main/_posts/python-discord.py-bot-setup/images/16.png)
+
+That was it, that was the "hard" part because we had to setup ton of shits. From now on we can enjoy writing code. ;)
+Bookmark the [discord.py Documentation](https://discordpy.readthedocs.io/en/latest/){:target="_blank"}, trust me you will need it a lot.
+If you need any help you can contact me on discord `sh3llm4g1ck#0853`.
+
+See you in the next tutorial.
 
