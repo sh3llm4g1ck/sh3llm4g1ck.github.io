@@ -9,12 +9,12 @@ In this tutorial I'll cover like everything about commands, basic format, user-s
 
 # Command definition
 
-Its really really easy to create a command. The below code create a command called `cmd` when we execute it prints `This is my first command!`, add this to your code - save it - run the file.
+Its really easy to create a command. The below code create a command called `cmd` when we execute it prints `This is my first command!`, add this to your code - save it - run the file.
 
 ```python
 @client.command()
 async def cmd(ctx):
-    await ctx.send("This is my first command!")
+        await ctx.send("This is my first command!")
 ```
 
 If you remember from the previous tutorial we set the `command_prefix` to `!` so now we will execute the command like this: `!cmd`
@@ -24,3 +24,13 @@ client = commands.Bot(command_prefix = '!')
 ```
 
 ![](https://raw.githubusercontent.com/sh3llm4g1ck/sh3llm4g1ck.github.io/main/_posts/python-discord.py-bot-commands/images/1.png)
+
+Let's take it a step further now, we can use [Context Attributes](https://discordpy.readthedocs.io/en/stable/ext/commands/api.html?highlight=author#discord.ext.commands.Context){:target="_blank"}. With context attributes we can get who called the command, the channel that command executed and many more things. 
+
+For example let's see who called the command.
+
+```python
+@client.command()
+async def cmd(ctx):
+        await ctx.send(f"Hello {ctx.author.name} \O")
+```
