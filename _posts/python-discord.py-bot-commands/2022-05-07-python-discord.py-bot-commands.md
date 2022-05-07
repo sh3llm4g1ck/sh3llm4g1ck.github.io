@@ -14,14 +14,10 @@ Its really easy to create a command. The below code create a command called `cmd
 ```python
 @client.command()
 async def cmd(ctx):
-        await ctx.send("This is my first command!")
+    await ctx.send("This is my first command!")
 ```
 
 If you remember from the previous tutorial we set the `command_prefix` to `!` so now we will execute the command like this: `!cmd`
-
-```python
-client = commands.Bot(command_prefix = '!')
-```
 
 ![](https://raw.githubusercontent.com/sh3llm4g1ck/sh3llm4g1ck.github.io/main/_posts/python-discord.py-bot-commands/images/1.png)
 
@@ -32,5 +28,7 @@ For example let's see who called the command.
 ```python
 @client.command()
 async def cmd(ctx):
-        await ctx.send(f"Hello {ctx.author.name} \O")
+    await ctx.send(f"Hello {ctx.author.name} \O")
 ```
+
+![](https://raw.githubusercontent.com/sh3llm4g1ck/sh3llm4g1ck.github.io/main/_posts/python-discord.py-bot-commands/images/2.png)
