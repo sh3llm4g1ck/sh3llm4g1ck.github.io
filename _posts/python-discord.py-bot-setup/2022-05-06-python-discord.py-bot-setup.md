@@ -62,7 +62,7 @@ You have a bot account now. From this page you can change things like your bot u
 
 # Invite Bot to the server
 
-We have a server, we have a bot account now we need to invite the bot to the server.
+We have a server, we have a bot account now we need to invite bot to the server.
 
 1) Under settings click on `OAuth2` then `URL Generator` and check the `bot` scope.
 
