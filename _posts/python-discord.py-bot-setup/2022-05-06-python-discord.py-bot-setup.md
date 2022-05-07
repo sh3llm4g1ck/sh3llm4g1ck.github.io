@@ -9,7 +9,7 @@ Welcome, welcome. There are ton of tutorials on how to make a discord bot with p
 The tutorials will be based on GNU\Linux, if you're a windows user then bad for you. Use your search engine to find a way to do the corresponding things.
 I don't know how many tutorials I'll make until we cover everything, I'll see. At the end of the tutorials you will be an 1337 bot developer, I guess.
 
-[ake a Guild/Server](#Make a Guild/Server)
+- [Make a Guild/Server](#make-a-guildserver)
 
 # Make a Guild/Server
 
