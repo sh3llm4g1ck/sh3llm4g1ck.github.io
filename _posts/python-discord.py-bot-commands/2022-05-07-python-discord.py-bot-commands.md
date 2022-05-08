@@ -65,3 +65,27 @@ async def cmd(ctx, *, msg):
 ```
 
 ![](https://raw.githubusercontent.com/sh3llm4g1ck/sh3llm4g1ck.github.io/main/_posts/python-discord.py-bot-commands/images/7.png)
+
+Needless to say, you can have as many arguments as you want.
+
+```python
+@client.command()
+async def cmd(ctx, msg, msg2, msg3):
+    await ctx.send(f"All my argument: {msg}, {msg2}, {msg3}")
+```
+
+![](https://raw.githubusercontent.com/sh3llm4g1ck/sh3llm4g1ck.github.io/main/_posts/python-discord.py-bot-commands/images/8.png)
+
+Now that we've covered the basics, let's make a command that convert our argument to uppercase. We will use the `.upper()` method.
+
+```python
+@client.command()
+async def cmd(ctx, msg):
+    await ctx.send(f"Converted to uppercase: {msg.upper()}")
+```
+
+![](https://raw.githubusercontent.com/sh3llm4g1ck/sh3llm4g1ck.github.io/main/_posts/python-discord.py-bot-commands/images/9.png)
+
+
+
+
