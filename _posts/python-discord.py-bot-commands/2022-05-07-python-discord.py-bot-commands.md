@@ -151,3 +151,7 @@ async def cmd(ctx):
     else:
         await ctx.send(f"you cant execute this command")
 ```
+
+We covered like everything about commands, I'll make a seperate tutorial for errors,cooldown etc. For more info check [Commands from discord.py documentation](https://discordpy.readthedocs.io/en/latest/ext/commands/commands.html?highlight=commands){:target="_blank"} Also here is all the checks list: [Commands from discord.py documentation](https://discordpy.readthedocs.io/en/latest/ext/commands/commands.html?highlight=commands#checks){:target="_blank"} I suggest you to bookmark them. If you need any help you can contact me on discord `sh3llm4g1ck#0853`.
+
+See you in the next tutorial.
