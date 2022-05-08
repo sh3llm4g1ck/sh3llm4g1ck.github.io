@@ -32,12 +32,36 @@ async def cmd(ctx):
 
 ![](https://raw.githubusercontent.com/sh3llm4g1ck/sh3llm4g1ck.github.io/main/_posts/python-discord.py-bot-commands/images/2.png)
 
-Υou may feel confused now, what is `{ctx.author.name}`!? I'll share the logic with you how to read the documentation.
+Υou may feel confused now, WTF is `{ctx.author.name}` !? I'll share the logic with you how to read the documentation.
 
-`ctx` is the parameter always have to be first then is the attribute `author`. If we click on `author` tell us that is a `Member` and member has other attributes like the `name`. Check the screenshots below.
+`ctx` is the parameter always have to be first then is the attribute `author`. If we click on `author` tell us that is a `Member` and member has other attributes like the `name`. Apply the same logic with the other attributes.
 
 ![](https://raw.githubusercontent.com/sh3llm4g1ck/sh3llm4g1ck.github.io/main/_posts/python-discord.py-bot-commands/images/3.png)
 
 ![](https://raw.githubusercontent.com/sh3llm4g1ck/sh3llm4g1ck.github.io/main/_posts/python-discord.py-bot-commands/images/4.png)
 
 # Command arguments
+
+Another important part is the arguments, we can define arguments like this:
+
+```python
+@client.command()
+async def cmd(ctx, msg):
+    await ctx.send(f"This is my argument: {msg}")
+```
+
+![](https://raw.githubusercontent.com/sh3llm4g1ck/sh3llm4g1ck.github.io/main/_posts/python-discord.py-bot-commands/images/5.png)
+
+If we want to use words with spaces we should use quotes:
+
+![](https://raw.githubusercontent.com/sh3llm4g1ck/sh3llm4g1ck.github.io/main/_posts/python-discord.py-bot-commands/images/6.png)
+
+If we don't want to use quotes, you can use keyword-only arguments. Note that you can only have one keyword-only argument.
+
+```python
+@client.command()
+async def cmd(ctx, *, msg):
+    await ctx.send(f"This is my argument: {msg}")
+```
+
+![](https://raw.githubusercontent.com/sh3llm4g1ck/sh3llm4g1ck.github.io/main/_posts/python-discord.py-bot-commands/images/7.png)
