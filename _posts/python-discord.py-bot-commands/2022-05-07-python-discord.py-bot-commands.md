@@ -7,6 +7,13 @@ tags: [python, discord.py, linux, commands]
 Ηere we are again with the 2nd tutorial. Commands.. commands I believe one of the most important things, what is a bot without commands?
 In this tutorial I'll cover like everything about commands, basic format, user-specific commands, role-specific commands and more.
 
+* [Command definition](#command-definition)
+* [Command arguments](#command-arguments)
+* [Bot owner only command](#bot-owner-only-command)
+* [DM only command](#dm-only-command)
+* [Specific role(s) command](#specific-roles-command)
+* [Specific user command](#specific-user-command)
+
 # Command definition
 
 Its really easy to create a command. The below code create a command called `cmd` when we execute it prints `This is my first command!`, add this to your code - save it - run the file.
@@ -152,6 +159,6 @@ async def cmd(ctx):
         await ctx.send(f"you cant execute this command")
 ```
 
-We covered like everything about commands, I'll make a seperate tutorial for errors,cooldown etc. For more info check [Commands from discord.py documentation](https://discordpy.readthedocs.io/en/latest/ext/commands/commands.html?highlight=commands){:target="_blank"} Also here is all the checks list: [Commands from discord.py documentation](https://discordpy.readthedocs.io/en/latest/ext/commands/commands.html?highlight=commands#checks){:target="_blank"} I suggest you to bookmark them. If you need any help you can contact me on discord `sh3llm4g1ck#0853`.
+We covered like everything about commands, I'll make a seperate tutorial for errors,cooldown etc. For more info check [Commands from discord.py documentation](https://discordpy.readthedocs.io/en/latest/ext/commands/commands.html?highlight=commands){:target="_blank"} Also here is all the [checks list](https://discordpy.readthedocs.io/en/latest/ext/commands/commands.html?highlight=commands#checks){:target="_blank"} I suggest you to bookmark them. If you need any help you can contact me on discord `sh3llm4g1ck#0853`.
 
 See you in the next tutorial.
