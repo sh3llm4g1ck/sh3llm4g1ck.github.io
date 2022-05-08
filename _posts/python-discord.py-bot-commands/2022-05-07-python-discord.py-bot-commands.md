@@ -63,7 +63,7 @@ If we want to use words with spaces we should use quotes:
 
 ![](https://raw.githubusercontent.com/sh3llm4g1ck/sh3llm4g1ck.github.io/main/_posts/python-discord.py-bot-commands/images/6.png)
 
-If we don't want to use quotes, you can use keyword-only arguments. Note that you can only have one keyword-only argument.
+If we don't want to use quotes, we can use keyword-only arguments. Note that you can only have one keyword-only argument.
 
 ```python
 @client.command()
@@ -95,7 +95,7 @@ async def cmd(ctx, msg):
 
 # Bot owner only command
 
-Let's say now that you want a command only for the bot owner. We can do that using the `is_owner()` check.
+Let's say now that you want a command only for the bot owner. You can do that using the `is_owner()` check.
 
 ```python
 @client.command()
