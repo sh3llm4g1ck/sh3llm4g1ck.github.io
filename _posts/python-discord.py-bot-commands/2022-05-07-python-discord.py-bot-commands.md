@@ -71,7 +71,7 @@ Needless to say, you can have as many arguments as you want.
 ```python
 @client.command()
 async def cmd(ctx, msg, msg2, msg3):
-    await ctx.send(f"All my argument: {msg}, {msg2}, {msg3}")
+    await ctx.send(f"All my arguments: {msg}, {msg2}, {msg3}")
 ```
 
 ![](https://raw.githubusercontent.com/sh3llm4g1ck/sh3llm4g1ck.github.io/main/_posts/python-discord.py-bot-commands/images/8.png)
@@ -86,6 +86,68 @@ async def cmd(ctx, msg):
 
 ![](https://raw.githubusercontent.com/sh3llm4g1ck/sh3llm4g1ck.github.io/main/_posts/python-discord.py-bot-commands/images/9.png)
 
+# Bot owner only command
 
+Let's say now that you want a command only for the bot owner. We can do that using the `is_owner()` check.
 
+```python
+@client.command()
+@commands.is_owner()
+async def cmd(ctx):
+    await ctx.send(f"hello owner")
+```
 
+# DM only command
+
+For example what if we want a command to be used only in DM? We can use the `dm_only()` check.
+
+```python
+@client.command()
+@commands.dm_only()
+async def cmd(ctx):
+    await ctx.send(f"hello from DM")
+```
+# Specific role(s) command
+
+Specific role command means the member that execute the command must have the specific role. To do that we can use the `has_role()` check.
+You can use the role name or ID. To get the role ID you should enable developer mode on discord, go to `User Settings` -> `Advanced` -> Enable `Developer Mode`. Well you're a developer now so you should have this setting on. :P
+
+```python
+@client.command()
+@commands.has_role('Admin') #or 972797319672127518 (role id)
+async def cmd(ctx):
+    await ctx.send(f"hello admin")
+```
+
+What if we want to have multiple roles? We can use the `has_any_role()` check.
+
+```python
+@client.command()
+@commands.has_any_role('Owner', 'Co-Owner', 972797319672127518)
+async def cmd(ctx):
+    await ctx.send(f"hello staff team")
+```
+
+# Specific user command
+
+You might be wondering now, how to make a specific user command? We need basic python logic in combination with discord.py library. The below code check if the `ctx.author.name` is the user `sh3llm4g1ck` the command will run else give error. You can use ID also like `ctx.author.id`.
+
+```python
+@client.command()
+async def cmd(ctx):
+    if ctx.author.name == 'sh3llm4g1ck':
+        await ctx.send(f"hello sh3llm4g1ck, this is your command!")
+    else:
+        await ctx.send(f"you cant execute this command")
+```
+
+You can add some many users as you want.
+
+```python
+@client.command()
+async def cmd(ctx):
+    if ctx.author.name == 'sh3llm4g1ck' or ctx.author.name == 'user2':
+        await ctx.send(f"hello sh3llm4g1ck, this is your command!")
+    else:
+        await ctx.send(f"you cant execute this command")
+```
